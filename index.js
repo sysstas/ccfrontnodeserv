@@ -1,7 +1,7 @@
 var express = require('express')
 var app = express()
 var path = require('path');
-app.set('port', (process.env.PORT || 8080))
+app.set('port', (process.env.PORT || 80))
 
 app.use(express.static('app'))
 app.route('/*').get(function(req, res) { 
